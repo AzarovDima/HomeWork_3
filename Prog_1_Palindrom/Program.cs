@@ -20,7 +20,7 @@ while (true)
 }
 int number_next = Math.Abs(number);
 
-if (number_next < 9999 || number_next >= 100000)
+if (number_next < 9999 || number_next >= 100000) //ИЛИ!!!
 {
     Console.WriteLine("Вы ввели не 5-ти значное число!");
     return;
