@@ -24,7 +24,7 @@ if (number_next < 9999 || number_next >= 100000) //ИЛИ!!!
 {
     Console.WriteLine("Вы ввели не 5-ти значное число!");
     return;
-} 
+}
 
 int number1 = number_next / 10000;          //найдем 1 число
 int number2 = number_next / 1000 % 10;      //найдем 2 число
