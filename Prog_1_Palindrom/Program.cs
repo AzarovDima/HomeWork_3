@@ -20,11 +20,11 @@ while (true)
 }
 int number_next = Math.Abs(number);
 
-if (number_next < 9999 && number_next >= 100000)
+if (number_next < 9999 || number_next >= 100000)
 {
     Console.WriteLine("Вы ввели не 5-ти значное число!");
     return;
-}
+} 
 
 int number1 = number_next / 10000;          //найдем 1 число
 int number2 = number_next / 1000 % 10;      //найдем 2 число
@@ -35,8 +35,7 @@ if (number1 == number5 && number2 == number4)
 {
     Console.WriteLine($"{number} --> YES");
 }
-else if (number1 != number5 && number2 != number4)
-{
+else
     Console.WriteLine($"{number} --> NO");
-}
+
 
